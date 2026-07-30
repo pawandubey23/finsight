@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
@@ -38,6 +39,7 @@ export default function App() {
         />
         <Route path="*" element={<Navigate to={user ? '/dashboard' : '/login'} replace />} />
       </Routes>
+            <Footer />
     </div>
   );
 }

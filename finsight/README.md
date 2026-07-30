@@ -1,4 +1,4 @@
-# FinSight — AI-powered personal finance copilot
+# FinSight — AI-powered personal finance copilot **Developed by Pawan Dubey**
 
 A MERN stack app with a Python ML microservice bolted on. Not just a transaction
 tracker — it categorizes, forecasts, and flags your spending automatically.
@@ -20,12 +20,12 @@ tracker — it categorizes, forecasts, and flags your spending automatically.
 
 ## Stack
 
-| Layer | Tech |
-|---|---|
-| Frontend | React (Vite) + Tailwind + Recharts |
-| Backend | Node.js + Express + Mongoose |
-| Database | MongoDB (Atlas recommended) |
-| ML service | Python + FastAPI + scikit-learn |
+| Layer      | Tech                               |
+| ---------- | ---------------------------------- |
+| Frontend   | React (Vite) + Tailwind + Recharts |
+| Backend    | Node.js + Express + Mongoose       |
+| Database   | MongoDB (Atlas recommended)        |
+| ML service | Python + FastAPI + scikit-learn    |
 
 ## Project structure
 
@@ -81,16 +81,19 @@ Open that URL, register an account, and start logging transactions.
 ## Deployment
 
 **Frontend → Vercel**
+
 1. Push this repo to GitHub
 2. Import the `frontend/` folder as a new Vercel project
 3. Set env var `VITE_API_URL` to your deployed backend URL + `/api`
 
 **Backend → Render**
+
 1. New Web Service, root directory `backend/`
 2. Build command `npm install`, start command `npm start`
 3. Set env vars: `MONGO_URI`, `JWT_SECRET`, `ML_SERVICE_URL` (your ML service's Render URL), `CLIENT_ORIGIN` (your Vercel URL)
 
 **ML service → Render**
+
 1. New Web Service, root directory `ml-service/`
 2. Build command `pip install -r requirements.txt`
 3. Start command `uvicorn main:app --host 0.0.0.0 --port $PORT`
@@ -123,7 +126,7 @@ Things you can add to make this even stronger, roughly in order of effort:
 ## Why this project is a strong portfolio piece
 
 It's not another CRUD app — it demonstrates full-stack fundamentals (auth,
-REST API design, MongoDB schema design) *and* a working ML pipeline talking to
+REST API design, MongoDB schema design) _and_ a working ML pipeline talking to
 a production backend across three deployed services. That combination is rare
 in student portfolios and maps directly to how real fintech/product teams are
 structured.

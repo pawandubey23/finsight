@@ -2,6 +2,7 @@
   "name": "finsight-backend",
   "version": "1.0.0",
   "description": "FinSight API - Node/Express backend",
+  "author": "Pawan Dubey",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {

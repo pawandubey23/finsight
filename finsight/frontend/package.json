@@ -1,6 +1,7 @@
 {
   "name": "finsight-frontend",
   "version": "1.0.0",
+  "author": "Pawan Dubey",
   "private": true,
   "type": "module",
   "scripts": {
